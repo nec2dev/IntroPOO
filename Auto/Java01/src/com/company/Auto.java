@@ -1,15 +1,16 @@
-package IntroPOO;
+package com.company;
 
 public class Auto {
     //Atributos
-    public String Patente;
-    public int cantRuedas;
-    public String color;
-    public String marca;
-    public String modelo;
-    public boolean tieneAireAcondicionado;
-    public float cilindrada;
-    public double precio;
+    private String Patente;
+    private int cantRuedas;
+    private String color;
+    private String marca;
+    private String modelo;
+    private boolean tieneAireAcondicionado;
+    private float cilindrada;
+    private double precio;
+    public char categoria;
 
     //Constructores
     public Auto() {
@@ -66,7 +67,7 @@ public class Auto {
     public void setPrecio(double precio) {
         this.precio = precio;
     }
-    
+
     //Metodos
     public void encender() {
         System.out.println("El auto se encendió");
@@ -88,9 +89,4 @@ public class Auto {
     public String toString() {
         return "Auto{" + "Patente=" + Patente + ", cantRuedas=" + cantRuedas + ", color=" + color + ", marca=" + marca + ", modelo=" + modelo + ", tieneAireAcondicionado=" + tieneAireAcondicionado + ", cilindrada=" + cilindrada + ", precio=" + precio + '}';
     }
-
 }
-
-//Construimos autos
-Auto audi01 = new Auto();
-Auto FordF100 = new Auto();
