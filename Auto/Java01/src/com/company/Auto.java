@@ -10,10 +10,27 @@ public class Auto {
     private boolean tieneAireAcondicionado;
     private float cilindrada;
     private double precio;
-    public char categoria;
+    private char categoria;
+
 
     //Constructores
+    //Constructor por defecto
     public Auto() {
+    }
+
+    //Constructor por parametros n1
+    public Auto(String Patente, int cantRuedas, String color, String marca, boolean tieneAireAcondicionado, float cilindrada, double precio, char categoria) {
+        this.Patente = Patente;
+        this.cantRuedas = cantRuedas;
+        this.color = color;
+        this.marca = marca;
+        this.tieneAireAcondicionado = tieneAireAcondicionado;
+        this.cilindrada = cilindrada;
+        this.precio = precio;
+        this.categoria = categoria;
+    }
+    //Constructor por parametros n2
+    public Auto(int cantRuedas, String color, String marca, boolean tieneAireAcondicionado, float cilindrada, double precio, char categoria) {
     }
 
     //Getters
@@ -41,6 +58,7 @@ public class Auto {
     public double getPrecio() {
         return precio;
     }
+    public char getCategoria(){ return categoria;}
 
     //Setters
     public void setPatente(String Patente) {
@@ -69,7 +87,7 @@ public class Auto {
     }
 
     //Metodos
-    public void encender() {
+    private void encender() {
         System.out.println("El auto se encendió");
     }
     public void frenar() {
@@ -87,6 +105,9 @@ public class Auto {
 
     @Override
     public String toString() {
-        return "Auto{" + "Patente=" + Patente + ", cantRuedas=" + cantRuedas + ", color=" + color + ", marca=" + marca + ", modelo=" + modelo + ", tieneAireAcondicionado=" + tieneAireAcondicionado + ", cilindrada=" + cilindrada + ", precio=" + precio + '}';
+        return "Auto{" + "Patente=" + Patente + ", cantRuedas=" + cantRuedas + ", color=" + color + ", marca=" + marca +
+                ", modelo=" + modelo + ", tieneAireAcondicionado=" + tieneAireAcondicionado + ", cilindrada=" + cilindrada + ", precio=" + precio + '}';
     }
 }
+
+

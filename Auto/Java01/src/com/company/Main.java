@@ -6,6 +6,7 @@ public class Main {
 	// write your code here
         //Construimos autos
         Auto audi01 = new Auto();
+        Auto ferrari01 = new Auto("ABC234", 4, "Azul", "Ferrari", true, 1.7f, 400000, 'A');
         Auto fordF100 = new Auto();
 
         //Seteamos atributos
@@ -13,17 +14,25 @@ public class Main {
         audi01.setCantRuedas(4);
         audi01.setColor("Rojo");
         audi01.setMarca("Audi");
-        audi01.setModelo("A3");
         audi01.setTieneAireAcondicionado(true);
         audi01.setCilindrada(1.8f);
         audi01.setPrecio(250000);
 
-        System.out.println(audi01.toString());
-
+        /*System.out.println(audi01.toString());
+        System.out.println("El color original del Audi es:" + audi01.getColor());
+        audi01.setColor("Amirillo patito");*/
+        //audi01.setMarca("Ferrari");
+        /*System.out.println("El nuevo color del Audi es:" + audi01.getColor());
         System.out.println(audi01.getMarca());
-        audi01.toString();
-        System.out.println(audi01.getColor());
-        audi01.setColor("Amarillo Patito");
-        System.out.println(audi01.getColor());
+        System.out.println();
+        System.out.println(ferrari01.getColor());
+        System.out.println(ferrari01.toString());
+        System.out.println(ferrari01.getCategoria());*/
+
+        Chofer a1 = new Chofer();
+        Chofer a2 = new Chofer("Juan", "Perez");
+
+        System.out.println(a1.toString());
+        System.out.println(a2.toString());
     }
 }
